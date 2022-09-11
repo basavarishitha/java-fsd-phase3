@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<div aling="center">
+ <h1>Create New User</h1>
+    <br/>
+     <form action="#" th:action="@{/saveuser}" th:object="${userdetails}"
+            method="post">
+ 
+            <table border="0" cellpadding="10">
+                <tr>
+                    <td>UserID:</td>
+                    <td><input type="text" th:field="*{userId}" /></td>
+                </tr>  
+                <tr>
+                    <td>User Name:</td>
+                    <td><input type="text" th:field="*{username}" /></td>
+                </tr> 
+                <tr>
+                    <td>Email id:</td>
+                    <td><input type="text" th:field="*{emailid}" /></td>
+                </tr> 
+                <tr>
+                    <td>Phone Number:</td>
+                    <td><input type="text" th:field="*{phone}" /></td>
+                </tr> 
+                <tr>
+                    <td>Product Purchased:</td>
+                    <td><input type="text" th:field="*{productPurhased}" /></td>
+                </tr> 
+                 <tr>
+                    <td>Purchased Date:</td>
+                    <td><input type="text" th:field="*{purchaseDate}" /></td>
+                </tr> 
+                 <tr>
+                    <td>Category:</td>
+                    <td><input type="text" th:field="*{category}" /></td>
+                </tr> 
+                <tr>
+                    <td colspan="2"><button type="submit">Save</button> </td>
+                </tr>
+                                        
+               
+            </table>
+        </form>
+   
+
+
+</div>
+
+
+</body>
+</html>
